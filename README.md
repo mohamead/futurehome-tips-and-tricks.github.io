@@ -2,7 +2,7 @@
 Simple overview of some tips and tricks in futurehome smart-house solution.
 
 ## Prerequisites
-[git](https://git-scm.com/downloads), [pip](https://pip.pypa.io/en/stable/installation/) and [mkdocs](https://pip.pypa.io/en/stable/installation/)
+[git](https://git-scm.com/downloads), [pip](https://pip.pypa.io/en/stable/installation/) and [mkdocs](https://squidfunk.github.io/mkdocs-material/getting-started/#installation)
 
 ## Build
 
