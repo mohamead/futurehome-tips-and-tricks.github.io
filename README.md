@@ -6,19 +6,19 @@ Simple overview of some tips and tricks in futurehome smart-house solution.
 
 ## Build
 
-Clone the project
+Clone the repo using `git`.
 
 ```
 git clone https://github.com/mohamead/futurehome-tips-and-tricks.git
 ```
 
-Install mkdocs using pip.
+Install `mkdocs` using `pip`.
 
 ```
 pip install mkdocs-material
 ```
 
-Build the website using mkdocs
+Serve the website locally using `mkdocs`
 
 ```
 mkdocs serve
