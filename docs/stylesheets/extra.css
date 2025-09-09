@@ -1,0 +1,9 @@
+[data-md-color-scheme="futurehome"] {
+    --md-primary-fg-color: #293137;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: normal;
+    src: "...";
+}

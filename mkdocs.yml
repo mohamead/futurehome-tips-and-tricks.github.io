@@ -1,0 +1,39 @@
+site_name: Futurehome tips & tricks
+site_url: https://www.mohamedadrik.com/futurehome-tips-and-tricks
+repo_url: https://github.com/mohamead/futurehome-tips-and-tricks
+repo_name: Github
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - scheme: futurehome
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.prune
+    - search.suggest
+    - search.highlight
+    - search.share
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - awesome-pages
+  - search
