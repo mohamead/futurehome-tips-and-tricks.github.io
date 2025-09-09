@@ -27,5 +27,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
 
 ---
-Plugin built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+Site built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
