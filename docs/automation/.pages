@@ -1,3 +1,5 @@
 nav:
     - index.md
-    - vendors
+    - Elko: elko.md
+    - Futurehome: futurehome.md
+    - Mill: mill.md

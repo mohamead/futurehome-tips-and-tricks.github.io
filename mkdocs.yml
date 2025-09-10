@@ -32,6 +32,18 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+
+markdown_extensions:
+  - tables
+  - footnotes
+  - admonition          # Enables !!! admonitions
+  - pymdownx.details    # Enables ??? collapsible admonitions
+  - pymdownx.superfences # Enables advanced code blocks
+  - pymdownx.highlight  # Code syntax highlighting
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+
 extra_css:
   - stylesheets/extra.css
 plugins:
