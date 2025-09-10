@@ -1,50 +1,31 @@
-# Futurehome automation(s)
+# Futurehome automations
 
-??? question "How to setup Futurehome-device(s)?"
+??? question "How to setup Futurehome devices?"
 
-    Most Futurehome-device(s) uses Z-Wave or Zigbee. Please see the official guide for more info[^1].
-
-??? question "How to setup Tibber-device(s)?"
-
-    In order to set up automation for Tibber, one must first download and install the Tibber integration on the Futurehome app. Please see the official guide for more info[^2].
+    Most Futurehome devices use either Z-Wave or Zigbee wireless protocols to communicate with your Futurehome hub. The specific setup process depends on which protocol your device uses, 
+    but both are designed for easy integration into your smart home system. For detailed step-by-step instructions on pairing and configuring Z-Wave and Zigbee devices with your Futurehome hub, please see the official device setup guide[^1].
 
 ## Consumption-based automation
-Using data from real time sensor(s) like Tibber pulse or Futurehome HAN, one can set up consumption-based automation to turn off
-some device in given period, before turing it back on.
+Using data from real-time sensors like the Futurehome HAN, you can set up consumption-based automations to turn off devices during specific periods, then turn them back on afterward.
 
-??? example "Example using Tibber pulse and Futurehome Smart Rele 16A"
-
-    In this example we will be using the Tibber pulse and Futurehome Smart Rele 16 to create a automation based on real time consumption data.
-
-    **Automation example 1** (Sensor data exceeds 5000 watt)
-    
-    ``` text
-    # Given 
-    We have a Tibber pulse, and want to turn off Futurehome Smart Rele if Tibber pulse exceeds 
-    5000 watt.
-
-    # When
-    Tibber pulse show(s) real time data over 5000 watt and modus is home, away, sleep or vacation.
-
-    # Then
-    Futurehome Smart Rele is turned off, and turned back again after 10 min. 
-    ```
 ??? example "Example using Futurehome HAN and Futurehome Smart Rele 16A"
 
-    In this example we will be using the Futurehome HAN and Futurehome Smart Rele 16 to create a automation based on real time consumption data.
+    In this example, we will use the Futurehome HAN and Futurehome Smart Relay 16A to create an automation based on real-time consumption data.
 
     **Automation example 1** (Sensor data exceeds 8000 watt)
     
     ``` text
-    # Given 
-    We have a Futurehome HAN, and want to turn off Futurehome Smart Rele if Tibber pulse exceeds 
-    8000 watt.
-
+    # Given
+    The user has a Futurehome HAN configured to their Futurehome
+    And a Futurehome Smart Relay 16A is connected and currently turned on
+    And the system mode is "home"
+    
     # When
-    Futurehome HAN show(s) real time data over 8000 watt and modus is home, away, sleep or vacation.
-
+    The Futurehome HAN shows power consumption exceeding 8000 watts
+    
     # Then
-    Futurehome Smart Rele is turned off, and turned back again after 10 min. 
+    The Futurehome Smart Relay should be turned off
+    And after 10 minutes, the relay should automatically turn back on
     ```
 
 ## Sensor-based automation
@@ -58,6 +39,3 @@ N/A
 
 [^1]:
 [https://support.futurehome.no/hc/en-no/articles/360038993352-Inclusion-adding-a-device](https://support.futurehome.no/hc/en-no/articles/360038993352-Inclusion-adding-a-device)
-
-[^2]:
-[https://support.futurehome.no/hc/en-no/articles/360052072892-Tibber-Pulse](https://support.futurehome.no/hc/en-no/articles/360052072892-Tibber-Pulse)

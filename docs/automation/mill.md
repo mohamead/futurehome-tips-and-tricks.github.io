@@ -1,8 +1,9 @@
-# Mill automation(s)
+# Mill automations
 
-??? question "How to setup Mill-device(s)?"
+??? question "How to setup Mill-devices?"
     
-    In order to set up automation for Mill, one must first download and install the Mill wifi integration on the futurehome app. Please see the official guide for more info[^1].
+    To set up automations for Mill devices, you must first download and install the Mill WiFi integration through the Futurehome app. Once the integration is installed and configured, you can create automations based on your Mill heating devices. 
+    Please see the official integration guide for detailed setup instructions[^1].
 
 ## Consumption-based automation
 N/A
@@ -14,39 +15,41 @@ N/A
 N/A
 
 ## Time-based automation
-Using any of the panel(s) that Mill provides, one can set up time-based automation(s) that will cover the use based on when someone is in the house.
+Using any of the wifi panels that Mill provides, you can set up time-based automations that adjust heating based on occupancy patterns throughout the day. These smart automations can automatically lower temperatures during typical away hours, 
+pre-heat rooms before you wake up or return from work, and maintain comfortable temperatures only when someone is actually home. This creates an efficient heating schedule that balances comfort with energy savings.
 
 ??? example "Example using Mill Glass Smart WiFi Panel Heater"
 
-    In this example we will be using the Mill Glass Smart WiFi Panel Heater Gen - 4 to create two automation(s) based on time of the day. 
-    The same example can be applied on any other Mill product(s).
+    In this example, we will use the Mill Glass Smart WiFi Panel Heater to create two automations based on the time of day. The same example can be applied to any other Mill products.
 
     **Automation example 1** (During daytime)
     
     ``` text
     # Given 
-    We have a Mill Glass Panel Heater and want to set the temperature to 20° Celsius, activating it 
-    at 07:00.
+    The user has an Mill Glass Smart WiFi Panel Heater connected to their Futurehome
+    And the current mode is set to "home"
+    And it is currently before 07:00
 
     # When
-    Time is 07:00 all days and modus is home. 
+    The time reaches 07:00 on any day
 
     # Then
-    Temperature of Mill Glass Panel Heater is set to 20° Celsius. 
+    Mill Glass Smart WiFi Panel Heater temperature should be set to 20° Celsius 
     ```
 
     **Automation example 2** (During nighttime) 
 
     ``` text
     # Given 
-    We have a Mill Glass Panel Heater and want to set the temperature to 15° Celsius, activating it 
-    at 00:00.
+    The user has an Mill Glass Smart WiFi Panel Heater connected to their Futurehome
+    And the current mode is set to "home"
+    And it is currently before 00:00
 
     # When
-    Time is 00:00 all days and modus is home. 
+    The time reaches 00:00 on any day
 
     # Then
-    Temperature of Mill Glass Panel Heater is set to 15° Celsius. 
+    Mill Glass Smart WiFi Panel Heater temperature should be set to 15° Celsius 
     ```
 
 [^1]:
