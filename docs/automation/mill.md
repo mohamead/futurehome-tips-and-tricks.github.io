@@ -16,7 +16,7 @@ N/A
 ## Time-based automation
 Using any of the panel(s) that Mill provides, one can set up time-based automation(s) that will cover the use based on when someone is in the house.
 
-???+ example "Example using Mill Glass Smart WiFi Panel Heater"
+??? example "Example using Mill Glass Smart WiFi Panel Heater"
 
     In this example we will be using the Mill Glass Smart WiFi Panel Heater Gen - 4 to create two automation(s) based on time of the day. 
     The same example can be applied on any other Mill product(s).
@@ -39,14 +39,14 @@ Using any of the panel(s) that Mill provides, one can set up time-based automati
 
     ``` text
     # Given 
-    We have a Mill Glass Panel Heater and want to set the temperature to 5° Celsius, activating it 
+    We have a Mill Glass Panel Heater and want to set the temperature to 15° Celsius, activating it 
     at 00:00.
 
     # When
     Time is 00:00 all days and modus is home. 
 
     # Then
-    Temperature of Mill Glass Panel Heater is set to 5° Celsius. 
+    Temperature of Mill Glass Panel Heater is set to 15° Celsius. 
     ```
 
 [^1]:

@@ -12,7 +12,7 @@
 Using data from real time sensor(s) like Tibber pulse or Futurehome HAN, one can set up consumption-based automation to turn off
 some device in given period, before turing it back on.
 
-???+ example "Example using Tibber pulse and Futurehome Smart Rele 16A"
+??? example "Example using Tibber pulse and Futurehome Smart Rele 16A"
 
     In this example we will be using the Tibber pulse and Futurehome Smart Rele 16 to create a automation based on real time consumption data.
 
@@ -25,6 +25,23 @@ some device in given period, before turing it back on.
 
     # When
     Tibber pulse show(s) real time data over 5000 watt and modus is home, away, sleep or vacation.
+
+    # Then
+    Futurehome Smart Rele is turned off, and turned back again after 10 min. 
+    ```
+??? example "Example using Futurehome HAN and Futurehome Smart Rele 16A"
+
+    In this example we will be using the Futurehome HAN and Futurehome Smart Rele 16 to create a automation based on real time consumption data.
+
+    **Automation example 1** (Sensor data exceeds 8000 watt)
+    
+    ``` text
+    # Given 
+    We have a Futurehome HAN, and want to turn off Futurehome Smart Rele if Tibber pulse exceeds 
+    8000 watt.
+
+    # When
+    Futurehome HAN show(s) real time data over 8000 watt and modus is home, away, sleep or vacation.
 
     # Then
     Futurehome Smart Rele is turned off, and turned back again after 10 min. 
