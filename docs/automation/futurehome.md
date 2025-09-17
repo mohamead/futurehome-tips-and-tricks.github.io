@@ -1,6 +1,6 @@
 # Futurehome automations
 
-??? question "How to setup Futurehome devices?"
+???+ question "How to setup Futurehome devices?"
 
     Most Futurehome devices use either Z-Wave or Zigbee wireless protocols to communicate with your Futurehome hub. The specific setup process depends on which protocol your device uses, 
     but both are designed for easy integration into your smart home system. For detailed step-by-step instructions on pairing and configuring Z-Wave and Zigbee devices with your Futurehome hub, please see the official device setup guide[^1].
@@ -8,7 +8,7 @@
 ## Consumption-based automation
 Using data from real-time sensors like the Futurehome HAN, you can set up consumption-based automations to turn off devices during specific periods, then turn them back on afterward.
 
-??? example "Example using Futurehome HAN and Futurehome Smart Rele 16A"
+???+ example "Example using Futurehome HAN and Futurehome Smart Rele 16A"
 
     In this example, we will use the Futurehome HAN and Futurehome Smart Relay 16A to create an automation based on real-time consumption data.
 

@@ -1,6 +1,6 @@
 # Mill automations
 
-??? question "How to setup Mill-devices?"
+???+ question "How to setup Mill-devices?"
     
     To set up automations for Mill devices, you must first download and install the Mill WiFi integration through the Futurehome app. Once the integration is installed and configured, you can create automations based on your Mill heating devices. 
     Please see the official integration guide for detailed setup instructions[^1].
@@ -18,7 +18,7 @@ N/A
 Using any of the wifi panels that Mill provides, you can set up time-based automations that adjust heating based on occupancy patterns throughout the day. These smart automations can automatically lower temperatures during typical away hours, 
 pre-heat rooms before you wake up or return from work, and maintain comfortable temperatures only when someone is actually home. This creates an efficient heating schedule that balances comfort with energy savings.
 
-??? example "Example using Mill Glass Smart WiFi Panel Heater"
+???+ example "Example using Mill Glass Smart WiFi Panel Heater"
 
     In this example, we will use the Mill Glass Smart WiFi Panel Heater to create two automations based on the time of day. The same example can be applied to any other Mill products.
 

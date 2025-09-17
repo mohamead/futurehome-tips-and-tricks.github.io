@@ -1,12 +1,12 @@
 # Elko automations
 
-??? question "How to setup Elko devices?"
+???+ question "How to setup Elko devices?"
 
     Most Elko devices use either Z-Wave or Zigbee protocols to connect to your Futurehome system. The specific setup process depends on which protocol your particular Elko device uses. 
     For detailed step-by-step instructions on adding Z-Wave and Zigbee devices to your Futurehome hub, please refer to the official Futurehome setup guides[^1].
 
 
-??? question "How to setup Tibber devices?"
+???+ question "How to setup Tibber devices?"
 
     To set up automations using Tibber devices, you must first download and install the Tibber integration through the Futurehome app. Once the integration is installed and configured, 
     you can create automations based on Tibber data such as energy prices and consumption. Please see the official Futurehome integration guide for detailed setup instructions[^2].
@@ -15,7 +15,7 @@
 Using real-time energy data from sensors like the Tibber Pulse, you can set up consumption-based automations that temporarily adjust heating device temperatures during high-consumption periods or peak pricing hours, 
 then automatically restore the original temperature settings once the specified period ends.
 
-??? example "Example using Tibber pulse and Elko Smart Super Thermostat"
+???+ example "Example using Tibber pulse and Elko Smart Super Thermostat"
 
     In this example, we will use the Tibber Pulse and Elko Smart Super Thermostat to create an automation based on real-time consumption data.
 
@@ -45,7 +45,7 @@ N/A
 ## Time-based automation
 Using a power regulator device, you can create time-based automations that automatically reduce power consumption during night hours when demand is typically lower.
 
-??? example "Example using Elko Smart Super Thermostat"
+???+ example "Example using Elko Smart Super Thermostat"
 
     In this example, we will use the Elko Smart Super Thermostat to create two automations based on the time of day..
 
@@ -67,6 +67,7 @@ Using a power regulator device, you can create time-based automations that autom
     **Automation example 2** (During nighttime) 
 
     ``` text
+    # Given
     The user has an Elko Smart Super Thermostat connected to their Futurehome
     And the current mode is set to "home"
     And it is currently before 00:00
