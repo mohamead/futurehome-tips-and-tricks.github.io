@@ -1,0 +1,18 @@
+[data-md-color-scheme="futurehome"] {
+    --md-primary-fg-color: #293137;
+    --md-footer-bg-color: #293137;
+    --md-accent-fg-color: #D77D54 !important;
+    --md-typeset-a-color: #D77D54 !important;
+    --md-primary-fg-color--dark: #D77D54 !important;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-accent-fg-color: #D77D54 !important;
+    --md-typeset-a-color: #D77D54 !important;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: normal;
+    src: "...";
+}
