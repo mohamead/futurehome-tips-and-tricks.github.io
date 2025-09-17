@@ -1,6 +1,8 @@
 # Futurehome tips & tricks
 Simple overview of some tips and tricks in futurehome smart-house solution.
 
+https://www.mohamedadrik.com/futurehome-tips-and-tricks.github.io
+
 ## Prerequisites
 [git](https://git-scm.com/downloads), [pip](https://pip.pypa.io/en/stable/installation/) and [mkdocs](https://squidfunk.github.io/mkdocs-material/getting-started/#installation)
 
